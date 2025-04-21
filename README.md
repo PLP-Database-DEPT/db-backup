@@ -23,8 +23,21 @@ Creating a backup of data only
   mysqldump -u username -p -t db_name > path_to_backup_file
 ```
 
-Start the server
+How to Back Up and Restore a Database in MySQL
 
-```bash
-  npm run start
+```sql
+  CREATE DATABASE hr;
+  USE hr;
+  CREATE TABLE IF NOT EXISTS employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL UNIQUE
+);
+INSERT INTO employees (name, email) 
+VALUES
+    ('John Doe', 'john.doe@example.com'),
+    ('Jane Smith', 'jane.smith@example.com'),
+    ('Bob Johnson', 'bob.johnson@example.com'),
+    ('Alice Jones', 'alice.jones@example.com'),
+    ('Charlie Brown', 'charlie.brown@example.com');
 ```
