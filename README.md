@@ -23,7 +23,7 @@ Creating a backup of data only
   mysqldump -u username -p -t db_name > path_to_backup_file
 ```
 
-How to Back Up and Restore a Database in MySQL
+## How to Back Up and Restore a Database in MySQL
 
 ```sql
   CREATE DATABASE hr;
