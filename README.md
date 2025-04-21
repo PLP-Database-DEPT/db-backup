@@ -53,3 +53,8 @@ Accidentally deleting some rows from a table
 ```sql
 mysql -u root -p hr < hr.sql
 ```
+### retrieve data from the employees table to verify the restoration
+```sql
+USE hr;
+SELECT * FROM employees;
+```
