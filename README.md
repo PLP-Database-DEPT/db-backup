@@ -41,3 +41,7 @@ VALUES
     ('Alice Jones', 'alice.jones@example.com'),
     ('Charlie Brown', 'charlie.brown@example.com');
 ```
+### Backing up a database
+```sql
+mysqldump -u root -p hr > hr.sql
+```
