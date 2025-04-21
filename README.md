@@ -147,3 +147,7 @@ VALUES
     (3, 1, 3, 2400.00),
     (3, 3, 2, 300.00);
 ```
+### Backing up one table
+```sql
+mysqldump -u root -p sales order_details > order_details.sql
+```
