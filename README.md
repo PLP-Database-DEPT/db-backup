@@ -1,5 +1,5 @@
 # Database Backup
-
+The **mysqldump** is a command-line utility in MySQL used for creating backups of MySQL databases
 ## Run Locally
 
 Clone the project
