@@ -5,16 +5,16 @@ In practice, you often use the **mysqldump** for **backup** and **restore** oper
 
 ## Commands
 
-Clone the project
+Creating a backup of a single database
 
-```bash
-  git clone https://link-to-project
+```sql
+  mysqldump -u username -p  db_name > path_to_backup_file
 ```
 
-Go to the project directory
+Creating a backup of all databases
 
-```bash
-  cd my-project
+```sql
+  mysqldump -u username -p -A > path_to_backup_file
 ```
 
 Install dependencies
