@@ -17,10 +17,10 @@ Creating a backup of all databases
   mysqldump -u username -p -A > path_to_backup_file
 ```
 
-Install dependencies
+Creating a backup of data only
 
 ```bash
-  npm install
+  mysqldump -u username -p -t db_name > path_to_backup_file
 ```
 
 Start the server
