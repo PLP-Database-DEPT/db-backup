@@ -58,3 +58,23 @@ mysql -u root -p hr < hr.sql
 USE hr;
 SELECT * FROM employees;
 ```
+## How to Back Up and Restore All Databases in MySQL
+#### Create sample database
+```sql
+CREATE DATABASE sampledb1;
+CREATE DATABASE sampledb2;
+CREATE DATABASE sampledb3;
+```
+## Backing up all databases
+```sql
+mysqldump -u root -p --all-databases > all_databases.sql
+```
+## Accidentally removing a database
+```sql
+drop database sampledb1;
+drop database sampledb2;
+```
+### Restoring all databases
+```sql
+mysql -u root -p < all_databases.sql
+```
